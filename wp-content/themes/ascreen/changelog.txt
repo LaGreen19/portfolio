@@ -1,0 +1,62 @@
+
+== Changelog ==
+Version 1.2.3  2016.12.18
+* fix header display£¨mobile phone£©
+* fix some problem
+
+Version 1.2.2  2016.11.26
+* fix footer and fixed header
+* fix some problem
+
+Version 1.2.1  2016.11.7
+* fix some problem
+* add plugin recommend
+
+
+Version 1.2.0  2016.9.18
+* add home section video and contact us
+* add upgrade to pro
+* add themes option in customize
+
+
+Version 1.1.9  2016.9.13
+* remove ascreen_get_option()
+* add default featrue images
+*fix Notice: Undefined index: ascreen_option
+* seprate create changlog.txt file and readme.txt file
+* add 404.php and archives.php 
+
+Version 1.1.8  2016.9.13
+* Fix Some Problems.
+
+Version 1.1.7  2016.9.12
+* Fix Some Problems.
+
+Version 1.1.6  2016.9.10
+* Fix Some Problems.
+
+Version 1.1.5  2016.9.6
+* fixed 1:- logo is core issue it should used in customizer
+* 2:- Remove unused code instead commenting in style.css
+* 3:- i did not see after adding header image in header header 
+   image not working so fixed it.
+* 4:- Background image not properly apply in background
+* 5:- post format video is not working fine.
+* 6:- post format in many category not working
+* 7:- Footer widgitize area image not working properly
+
+Version 1.1.4  2016.8.24
+* Fix Some Problems.
+
+Version 1.1.3  2016.8.23
+* Fix Some Problems.
+
+Version 1.1.2
+* Fix Some Problems.
+
+Version 1.0
+* Initial Release
+
+--------------------------------------------------------------------------------------------
+
+	For any help you can contact us at support[at]coothemes.com

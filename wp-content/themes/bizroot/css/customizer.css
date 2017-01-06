@@ -1,0 +1,48 @@
+/** Radio image **/
+
+input.stylish-radio-image {
+    display: none;
+}
+input.stylish-radio-image + span {
+    margin-right: 10px;
+    display: inline-flex;
+    padding: 2px!important;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border: 2px solid #FFF;
+}
+input.stylish-radio-image:checked + span {
+    border: 2px solid #777777;
+}
+
+/** Upsell **/
+
+#accordion-section-upsell_section h3.accordion-section-title,
+#accordion-section-upsell_section h3.accordion-section-title:hover {
+    background-color: #206908!important;
+    color: #FFF!important;
+}
+#accordion-section-upsell_section h3.accordion-section-title:after {
+    color: #FFF!important;
+}
+
+.customize-control-upsell .buy-button-wrapper {
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+.customize-control-upsell .buy-button-wrapper .buy-button {
+	background-color: #206908;
+	border-color: #4cae4c;
+	color: #fff;
+	box-shadow: none;
+	padding: 10px 15px;
+	display: inline-block;
+	font-size: 16px;
+	opacity: 1;
+}
+.customize-control-upsell .buy-button-wrapper .buy-button:hover {
+	background-color: #174c07;
+}
