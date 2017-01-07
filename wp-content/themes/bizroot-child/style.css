@@ -26,7 +26,7 @@ h2, h3, h4, h5, h6, p, a{
 
 h1{
   font-size:3em;
-  font-family:"Cookie", cursive;
+  font-family:"cookie", cursive;
   color:#b9bfc9;
 }
 
@@ -92,7 +92,7 @@ body{
 }
 
 .site-header {
-    background-image: url(http://localhost:8080/portfolio/wp-content/uploads/2017/01/header-3-1024x386.jpg);
+    background-image: url(http://localhost:8888/portfolio/wp-content/uploads/2017/01/header-3-1024x386.jpg);
     background-size:cover;
     height:225px;
     position:static;
@@ -261,22 +261,22 @@ body #content #primary {
 }
 
 .page-header{
-  background-image:url(http://localhost:8080/portfolio/wp-content/uploads/2017/01/cropped-header-2-1024x264.jpg);
+  background-image:url(http://localhost:8888/portfolio/wp-content/uploads/2017/01/cropped-header-2-1024x264.jpg);
   background-size:cover;
   height:250px;
 }
 
 h1.portfolio-name{
-  font-size:3.75em;
+  font-size:3.5em;
   margin-left:3%;
   line-height:0em;
-  padding-top:9%;
+  padding-top:6%;
 }
 
 h2.portfolio-header-job-title{
   line-height:1em;
-  font-size:1.65em;
-  margin:6% 0 0 14%;
+  font-size:1.5em;
+  margin:2% 0 0 13%;
 }
 
 h2.portfolio-header-job-title span{
@@ -330,6 +330,12 @@ article.portfolio-project {
   font-family:"Cookie", cursive;
   font-size:2.5em;
   text-align:center;
+}
+
+
+.item-hover-139.circle.effect4 .info h3{
+  font-size:1.5em;
+  font-family:"cabin condensed", sans-serif;
 }
 
 
@@ -504,10 +510,14 @@ i.fa.fa-github-square{
 
 
 /***************************TABLET SYLES ****************************/
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 650px){
 
 html{
   font-size:24px;
+}
+
+.container {
+  width:100%;
 }
 
 /*****HEADER *******/
@@ -517,7 +527,7 @@ html{
 
 
 .name{
-  margin-top:10%;
+  margin-top:9%;
   font-size:3.25em;
 }
 
@@ -534,7 +544,7 @@ h2.portfolio-header-job-title{
 }
 
 .site-title{
-  margin:6% 0 1% -1%;
+  margin:4% 0 0 -1%;
 }
 
 .name-title{
@@ -565,7 +575,7 @@ div#sidebar-front-page-widget-area{
 
 #sidebar-front-page-widget-area .bizroot_widget_call_to_action{
   margin:1% 0 10% 0;
-  display:block;
+  display:inline;
 }
 
 aside#text-17{
@@ -579,18 +589,17 @@ aside#text-17{
   margin:0;
 }
 
-#sidebar-front-page-widget-area .widget-title, #footer-widgets .widget-title{
-  margin-top: -34%;
-  margin-bottom: 31%;
-  font-size:3em;
+#sidebar-front-page-widget-area .widget-title{
+  margin: -34% 0 -3% 0!important;
+  font-size:2.5em;
   line-height:1.3em;
 }
 
 p.intro{
-  margin-top:-34%;
-  margin-bottom:8%;
+  margin-bottom:14%!important;
   padding-top:3%;
   font-size:1.5em;
+  line-height:1.3em;
   text-align:left;
 }
 
@@ -604,16 +613,24 @@ p.intro span{
   padding:0;
 }
 
+.call-to-action-buttons{
+  margin-bottom:15%;
+}
 
+.call-to-action-buttons .custom-button{
+  padding:1% 15%;
+  font-size:4em;
+}
 
 /********SERVICES******/
   .bizroot_widget_services .service-col-4 .service-block-item {
-      width: 48%;
+      width: 46%;
+      height:350px;
       margin:0 1%;
   }
 
   .service-block-list {
-    margin:0 2%;
+    margin:0;
   }
 
 .service-block-item-excerpt {
@@ -717,12 +734,12 @@ article.portfolio-project{
 
 
 
-/******SMALL DESKTOP STYLES********/
+/******LAPTOP  STYLES********/
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 850px){
 
 .name{
-  margin:3% 0 2% 0;
+  margin:7% 0 2% 0;
 }
 
 .header-job-title span{
@@ -738,12 +755,9 @@ article.portfolio-project{
 }
 
 .site-title{
-  margin:5% 0 4% 0;
+  margin:5% 0 0 0;
 }
 
-.main-navigation ul{
-  margin-top:20%;
-}
 
 .main-navigation ul li a{
   color:#b9bfc9;
@@ -751,7 +765,7 @@ article.portfolio-project{
 
 /*****INTRO AREA *****/
 aside#text-17{
-  width:20%;
+  width:23%;
   float:left;
   margin:-8% 0 -6.5% 2%!important;
 }
@@ -761,18 +775,16 @@ aside#text-17{
 }
 
 p.intro{
-  margin:-34% 0 0 24%;
-  width:74%;
+  margin:0 0 0 5%!important;
+  width:70%;
   float:left;
+  height:350px;
 }
 
-aside#text-17{
-  width:20%;
-}
 
 #sidebar-front-page-widget-area .widget-title{
-  margin-top:-23%;
-  font-size:2.5em;
+  margin-top:-30%!important;
+  font-size:3em;
 }
 
 #sidebar-front-page-widget-area  .widget{
@@ -786,17 +798,12 @@ aside#text-17{
 
 /******SERVICES******/
 
-.bizroot_widget_services .service-col-4 .service-block-item {
-    width: 23%;
-}
-
 h3.service-item-title{
-  font-size:1.5em;
-  margin-top:10%;
+  font-size:1.75em;
 }
 
 .service-block-item-excerpt{
-  font-size:.75em;
+  font-size:1.25em;
 }
 
 
@@ -856,4 +863,221 @@ h2.portfolio-page-title{
 #footer-widgets ul{
   font-size:1.25em;
 }
+
+/***********DESKTOP STYLES *******************/
+
+
+@media only screen and (min-width: 1040px){
+
+
+/*******HEADER ************/
+
+.name{
+  font-size:5.25em;
+  margin-top:4%;
+}
+
+
+.header-job-title{
+  font-size:2em;
+  margin-left:8%;
+}
+
+.site-description{
+  font-size:1.65em;
+}
+
+.main-navigation ul li a{
+  font-size:1.25em;
+}
+
+
+
+
+
+/*****INTRO AREA******/
+
+
+  aside#text-17{
+    width:25%;
+    float:left;
+    margin:-6% 1% -6.5% 6%!important;
+  }
+
+#sidebar-front-page-widget-area .widget-title{
+  margin:-29% 0 0 0!important;
+  letter-spacing:.1em;
+}
+
+p.intro{
+    margin:-3% 0 0 3%!important;
+    width:64%;
+    float:left;
+    font-size:1.75em;
+    line-height:1.75em;
+  }
+
+
+
+/******LARGE DESKTOP STYLES **************/
+
+
+  @media only screen and (min-width: 1300px){
+
+p{
+  font-size:1.75em;
+}
+
+/*******HEADER *************/
+
+.site-title{
+  margin:5% 0 1% 0;
+}
+
+.name{
+  margin:2% 0 0 0;
+  font-size:4.25em;
+}
+
+.header-job-title{
+  margin:1% 0 0 2%;
+}
+
+.site-description {
+    font-size: 2em;
+}
+
+
+/*******INTRO*******/
+
+#sidebar-front-page-widget-area .widget-title{
+  margin-top:-20%!important;
+}
+
+
+  p.intro{
+    line-height:1.85em;
+    margin: -14% 0 0 29%!important;
+  }
+
+
+.profile-img-wrapper{
+  margin:-4% 4% -6.5% 3%!important;
+  width:75%;
+}
+
+
+/*****SERVICES*********/
+
+.bizroot_widget_services .service-col-4 .service-block-item{
+  width:48%;
+  padding:1%;
+}
+
+i.fa.fa-wordpress, i.fa.fa-code, i.fa.fa-mobile-phone, i.fa.fa-cogs{
+  font-size:5em;
+}
+
+h3.service-item-title{
+  font-size:2em;
+}
+
+.service-block-item-excerpt{
+  font-size:.85em;
+  font-weight:lighter;
+}
+
+}
+
+
+
+
+/**********VERY LARGE / WIDESCREEN DESKTOP *********/
+
+  @media only screen and (min-width: 1500px){
+
+html{
+  background-color:#4e4c63;
+}
+
+body{
+  max-width:2000px;
+  margin:0 auto;
+}
+
+/******HEADER **********/
+.name-title{
+  margin-left:2%;
+}
+
+.site-title{
+  margin:9% 0 1% 0;
+}
+
+h2.header-job-title{
+  margin-left:5%;
+}
+
+
+.site-header{
+  height:525px;
+}
+
+/*****INTRO AREA ******/
+
+aside#text-16 {
+  width:60%;
+  float:left;
+  height:600px;
+
+}
+
+aside#text-17{
+  width:15%;
+  margin-left:15%!important;
+}
+
+.profile-img-wrapper{
+  width:100%;
+}
+
+#sidebar-front-page-widget-area  .widget{
+  margin-top:-12%;
+}
+
+#sidebar-front-page-widget-area .widget-title{
+  margin-top:0!important;
+  width:100%;
+}
+
+p.intro{
+  width:100%;
+  margin: 0 0 0 2%!important;
+
+}
+
+.call-to-action-content{
+  margin-bottom:10%;
+}
+
+.call-to-action-buttons{
+  margin-bottom:10%;
+}
+
+/*******SERVICES*********/
+
+.bizroot_widget_services .service-col-4 .service-block-item{
+  width:23%;
+}
+
+/*****FOOTER ******/
+#footer-widgets .widget-title, #footer-widgets a{
+  font-size:1.75em;
+}
+
+#footer-widgets ul{
+  font-size:1.5em;
+}
+
+
 }

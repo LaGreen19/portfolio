@@ -20,6 +20,11 @@
 ?>
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Cabin+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	
 	<?php
 	/**
 	 * Hook - bizroot_action_head.
