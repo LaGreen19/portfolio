@@ -29,8 +29,11 @@ $project_date = get_field('project_date');
 $code_link = get_field('code_link');
 $main_image = get_field('main_image');
 $image_1 = get_field('image_1');
+$image_1_explained = get_field('image_1_explained');
 $image_2 = get_field('image_2');
+$image_2_explained = get_field('image_2_explained');
 $image_3 = get_field('image_3');
+$image_3_explained = get_field('image_3_explained');
 $image_4 = get_field('image_4');  ?>
 
 <?php the_content(); ?>
@@ -45,14 +48,18 @@ $image_4 = get_field('image_4');  ?>
 
 </figure>
 
+<div class="project-container">
+
+
 <article class="portfolio-project single-project">
-  <div class="project-info">
+
+	<div class="project-info">
 		<h3><?php echo $project_explain; ?></h3>
 		<h3><?php echo $services; ?></h3>
     <h3><?php echo $project_link; ?></h3>
 	  <h3><?php echo $code_link; ?></h3>
     <h3><?php echo $project_date; ?></h3>
-  </div>
+
 
 <div class="project-screenshots">
 
@@ -62,10 +69,21 @@ $image_4 = get_field('image_4');  ?>
   <?php } ?>
 </div>
 
-<div class="tablet-mobile">
+<div class="individual-img-caption top-img-caption">
+  <?php if($image_1_explained) { ?>
+    <?php echo $image_1_explained; ?>
+  <?php } ?>
+</div>
+
 <div class="individual-img second-img">
   <?php if($image_2) { ?>
     <?php echo wp_get_attachment_image( $image_2, $size ); ?>
+  <?php } ?>
+</div>
+
+<div class="individual-img-caption second-img-caption">
+  <?php if($image_2_explained) { ?>
+    <?php echo $image_2_explained; ?>
   <?php } ?>
 </div>
 
@@ -74,6 +92,14 @@ $image_4 = get_field('image_4');  ?>
     <?php echo wp_get_attachment_image( $image_3, $size ); ?>
   <?php } ?>
 </div>
+
+<div class="individual-img-caption second-img-caption">
+  <?php if($image_3_explained) { ?>
+    <?php echo $image_3_explained; ?>
+  <?php } ?>
+</div>
+
+
 </div>
 
 <div class="bottom-project-images">
@@ -97,10 +123,11 @@ $image_4 = get_field('image_4');  ?>
 </div>
 
 </div>
-
+  </div>
 </div>
 
 </article>
+</div>
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->

@@ -2,12 +2,12 @@
 add_shortcode( 'PGP', 'PhotoGalleryPluginShortCode' );
 function PhotoGalleryPluginShortCode( $Id ) {
     ob_start();
-
+	
 	/**
 	 * Hex to Rgb color code function
 	 */
 	require_once("pgp_rgb_color_code_function.php");
-
+	
 	/**
 	 * Load All Image Gallery Custom Post Type
 	 */
@@ -16,13 +16,13 @@ function PhotoGalleryPluginShortCode( $Id ) {
 	$loop = new WP_Query( $AllGalleries );
 
 	while ( $loop->have_posts() ) : $loop->the_post();
-
+	
 		/**
 		 * Load Saved Photo Gallery Pro Settings
 		 */
 
 		if(!isset($AllGalleries['p'])) {
-			$AllGalleries['p'] = "";
+			$AllGalleries['p'] = "";		
 		} else {
 			$PGP_Id = $AllGalleries['p'];
 			$PGP_Gallery_Settings = "PGP_Gallery_Settings_".$PGP_Id;
@@ -53,16 +53,16 @@ function PhotoGalleryPluginShortCode( $Id ) {
 					})( jQuery );
 				});
 			</script>
-			<?php
-
+			<?php 
+			
 		$img_bg_color =  PGP_hex2rgb( $PGP_Color );
-
+		
 		// Image Label String Length Corp
 		if($PGP_Gallery_Layout=="col-md-6"){
-			$str_lenght = 140;
+			$str_lenght = 40;
 		}
 		else{
-			$str_lenght = 140;
+			$str_lenght = 40;
 		}
 		?>
 		<style>
@@ -83,7 +83,7 @@ function PhotoGalleryPluginShortCode( $Id ) {
 			.pp_nav {
 				display: block !important;
 			}
-
+			
 			@media (min-width: 992px){
 				.col-md-6 {
 					width: 49.57% !important;
@@ -124,7 +124,7 @@ function PhotoGalleryPluginShortCode( $Id ) {
 						$url1 = $PGP_SinglePhotoDetails['PGP_gallery_admin_thumb'];
 						$url2 = $PGP_SinglePhotoDetails['PGP_gallery_admin_medium'];
 						$circle = $PGP_SinglePhotoDetails['PGP_gallery_admin_circle'];
-						$video = $PGP_SinglePhotoDetails['PGP_video_link'];
+						$video = $PGP_SinglePhotoDetails['PGP_video_link']; 
 						$link = $PGP_SinglePhotoDetails['PGP_external_link'];
 						$type = $PGP_SinglePhotoDetails['PGP_portfolio_type'];
 						if($type=="image")
@@ -141,10 +141,10 @@ function PhotoGalleryPluginShortCode( $Id ) {
 						<div class="<?php echo $PGP_Gallery_Layout; ?> item_margin col-sm-6">
 						  <!-- colored -->
 						  <div class="item-hover-<?php echo $PGP_Id;?> circle colored <?php echo $PGP_Effect; ?> <?php echo $PGP_Effect_animation; ?>">
-
-						  <a target="_self" href="<?php echo esc_attr($href_link); ?>" title="<?php if( $PGP_Show_Image_Label =="yes"){ echo esc_attr( $name); } ?>"
-						  <?php
-							if($type != "link"){  ?> class="swipebox_<?php echo esc_attr($PGP_Id); ?>" <?php  } else{ ?> target="<?php echo esc_url($PGP_Open_Link); ?>" <?php }
+						
+						  <a href="<?php echo esc_attr($href_link); ?>" title="<?php if( $PGP_Show_Image_Label =="yes"){ echo esc_attr( $name); } ?>"
+						  <?php  
+							if($type != "link"){  ?> class="swipebox_<?php echo esc_attr($PGP_Id); ?>" <?php  } else{ ?> target="<?php echo esc_url($PGP_Open_Link); ?>" <?php } 
 								 ?> >
 							  <div class="img"><img src="<?php echo esc_url($circle); ?>" ></div>
 							  <div class="info">
@@ -159,7 +159,7 @@ function PhotoGalleryPluginShortCode( $Id ) {
 			</div>
 		</div>
 		<script>
-
+		
 			jQuery('.gallery1').imagesLoaded( function(){
 	  jQuery('.gallery1').masonry({
 	   itemSelector: '.item_margin',

@@ -29,7 +29,7 @@ $project_link = get_field('project_link');
 $project_date = get_field('project_date');
 $main_image = get_field('main_image'); ?>
 
-<article class="portfolio-project project">
+<article class="portfolio-project portfolio-page-project">
 
 	<a href="<?php the_permalink(); ?>">
 		<h2 class="portfolio-page-title"><?php the_title(); ?></h2>

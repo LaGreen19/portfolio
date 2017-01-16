@@ -1,0 +1,1050 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*******BASE STYLES *********/
+
+html{
+  font-size:18px;
+}
+
+body{
+  background-color:#eeeeee;
+}
+
+h1{
+  font-size:1.167em;
+}
+
+h2{
+  font-size:.89em;
+}
+
+h3{
+  font-size:.78em;
+}
+
+h5{
+  font-size:.68em;
+  text-transform:uppercase;
+}
+
+
+p{
+  font-size:.78em;
+  font-family:"Source Sans Pro", sans-serif;
+}
+
+body{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+/*******HEADER ************/
+
+header{
+  background-color:#dddddd;
+}
+
+.logo{
+  margin:0;
+  width:100%;
+}
+
+.logo img{
+  width:100%;
+}
+
+/*******NAVIGATION**********/
+
+nav{
+  width:100%;
+  margin:0;
+  display:flex;
+  align-items:center;
+}
+
+nav ul{
+  list-style:none;
+  background-color:#dddddd;
+  padding:0;
+  margin:0;
+  width:100%;
+}
+
+nav li{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:60px;
+  border-bottom:1px #cccccc solid;
+  width:100%;
+}
+
+nav ul li a{
+  color:black;
+  text-transform:uppercase;
+  text-decoration:none;
+  font-family:"Source Sans Pro", sans-serif;
+  font-weight:bold;
+  font-size:1.2em;
+}
+
+.nav-reviews a{
+    color:#ff1256;
+}
+.about-us a{
+  color:#ff1256;
+}
+
+
+/***********ASIDE **************/
+
+.newsletter{
+  width:100%;
+  display:block;
+}
+
+.newsletter h2{
+  text-align:left;
+}
+
+.newsletter-signup input, button{
+  width:100%;
+}
+
+.newsletter-signup{
+  border-top:1px solid #cccccc;
+  border-bottom:1px solid #cccccc;
+  width:90%;
+  margin:1% 5% 3% 5%;
+  height:200px;
+}
+
+.newsletter-signup input{
+  border:1px solid #cccccc;
+  width:100%;
+  height:45px;
+}
+
+.upcoming-concerts, .faq{
+  display:none;
+}
+
+
+
+/************BUTTONS**********/
+.signup-btn{
+  width:100%;
+  background-color:#ff1256;
+  color:white;
+  text-transform:uppercase;
+  font-weight:bold;
+  height:40px;
+  margin-top:5%;
+  box-shadow: 5px 5px 5px #d19aaa;
+  font-size:1em;
+  border: 0;
+}
+
+.buy-btn{
+  width:75%;
+  background-color:#b21e49;
+  color:white;
+  text-transform:uppercase;
+  height:40px;
+  margin-top:5%;
+  box-shadow: 5px 5px 5px #d19aaa;
+  font-size:1em;
+  font-weight:bold;
+  border: 0;
+
+}
+/*********MAIN AREA ***********/
+
+.main-article-img, .main-article-img img{
+  width:95%;
+  margin:2.5%;
+}
+
+.top-content{
+  width:90%;
+  margin:0 auto;
+}
+
+.top-article{
+  background-color:#eeeeee;
+  padding-top:1%;
+}
+
+/****************NEWS AND REVIEWS PAGE**************************/
+
+
+/********HEADER********/
+
+
+.reviews-link a{
+  color:#ff1256;
+}
+
+/*****MAIN INFO SECTION ******/
+
+.news-reviews{
+  width:90%;
+  margin:5% 5% 0 5%;
+}
+
+.news-reviews article{
+  border-bottom:1px solid #cccccc;
+  clear:both;
+  background-color:#eeeeee;
+  height:140px;
+  padding:0;
+}
+
+
+.news-reviews figure{
+  border:1px solid #cccccc;
+  width:45%;
+  float:left;
+  margin:0 5% 0 0;
+}
+
+.news-reviews img{
+  width:100%;
+}
+
+.news-reviews p{
+  display:none;
+}
+
+.news-reviews h3{
+  margin-top:0;
+}
+
+.news-reviews h5{
+  margin:5% 0 0 0;
+}
+
+.bottom-article{
+  padding-bottom:5%;
+  border-bottom:#cccccc 1px solid;
+}
+
+
+/********FOOTER ************/
+
+footer{
+  background-color:#eeeeee;
+  height:70px;
+  margin-top:10%;
+  width:100%;
+}
+
+.footer-img{
+  width:60%;
+  margin:0 20%;
+}
+
+.footer-img img{
+  width:100%;
+}
+
+
+/***************************NEWS PAGES************************************/
+
+section.news-content{
+  margin-left:3%;
+}
+
+.news-main{
+  border-bottom:0;
+}
+
+.news-article{
+  border-right:1px solid #cccccc;
+  padding-right:5%;
+}
+
+.news-aside{
+  padding:0;
+  border:0;
+
+}
+
+
+
+/**************ABOUT US PAGE *******************/
+
+/***NAVIGATION***/
+
+.about-us a{
+    color:#ff1256;
+  }
+
+/****CONTACT US******/
+.conctact-us a{
+  color:black;
+}
+
+section.contact-us {
+    text-align:center;
+}
+
+
+/***TEAM MEMBERS ****/
+
+.team-member{
+  text-align:center;
+}
+
+.mission, .team {
+    width: 94%;
+    margin: 0 auto;
+}
+
+
+/************FREQUENTLY ASKED QUESTIONS **********/
+
+.faq-main{
+  width:60%;
+  float:left;
+  margin-left:4%;
+}
+
+.faq-main h1{
+  margin-left:5%;
+}
+
+/************UPCOMING CONCERTS ********/
+.feed-date{
+  border: 1px solid gray;
+  float: left;
+  margin-right: 5%;
+  width: 25%;
+  text-align: center;
+}
+
+.feed-item{
+  clear:both;
+  margin:15%;
+}
+
+.feed-item h3, h4{
+  margin:0;
+  padding:0;
+}
+
+.feed-item h4{
+  font-weight:lighter;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/********TABLET STYLES***********/
+@media only screen and (min-width: 748px) {
+
+html{
+  font-size:18px;
+}
+
+h2{
+  font-size:1.167em;
+}
+
+h3{
+  font-size:1em;
+}
+
+/********HEADER AND NAVIGATION*********/
+
+.logo{
+  width:38%;
+  float:left;
+}
+
+nav{
+  width:62%;
+  float:left;
+  margin:2% 0;
+}
+
+nav ul{
+  width:100%;
+  height:3em;
+  line-height:3em;
+}
+
+nav li{
+  display:inline;
+  margin-left:3.5%;
+  border:0;
+}
+
+nav ul li a{
+  font-size:1em;
+}
+
+/******************MAIN AREA ******************/
+
+main{
+  clear:both;
+}
+
+figure.main-article-img{
+  width:60%;
+  float:left;
+}
+
+figure.main-article-img img{
+  border:1px solid black;
+  width:100%;
+  margin:0;
+}
+
+.top-content h1{
+  padding-top:3%;
+}
+
+/************SIDEBAR ----CALLS TO ACTION ***********/
+.bottom-section{
+  clear:both;
+  border:1px solid #cccccc;
+  width:95%;
+  margin:0 2.5%;
+}
+
+aside{
+  width:35%;
+  float:right;
+  margin-right:2%;
+}
+
+aside h2{
+  font-size:1.167em;
+}
+
+.newsletter-signup{
+  height:auto;
+  width:100%;
+  margin:0;
+  border:0;
+}
+
+.newsletter-signup input{
+  height:25px;
+}
+
+.faq, .upcoming-concerts{
+  display:inline-block;
+  margin-top:15%;
+}
+
+.see-all-btn{
+  width:100%;
+  background-color:#b21e49;
+  color:white;
+  text-transform:uppercase;
+  height:40px;
+  margin-top:5%;
+  box-shadow: 5px 5px 5px #d19aaa;
+  font-size:1em;
+  font-weight:bold;
+  border: 0;
+
+}
+/*******NEWS AND REVIEWS *********/
+.news-reviews{
+  width:58%;
+  float:left;
+  margin:0 0 20% 2%;
+  padding-right:1%;
+}
+
+.top-article{
+    border-top:0;
+}
+
+.news-reviews figure{
+  width:28%;
+  margin:0 5% 0 0;
+}
+
+.news-reviews img{
+  border:1px solid gray;
+}
+
+.news-reviews article{
+  clear:both;
+  padding-right:3%;
+  margin-right:-20px;
+  height:120px;
+}
+
+.news-reviews h3{
+  padding:0;
+  margin:0;
+}
+
+.news-reviews h5{
+  margin: 3% 0 0 0;
+}
+
+
+.bottom-article{
+  border-bottom:0!important;
+}
+
+/**************FOOTER ***************/
+footer{
+  clear:both;
+  width:100%;
+  border-top:1px solid #cccccc;
+  display:flex;
+  justify-content:center;
+}
+
+.footer-img{
+  width: 40%;
+  margin: 0 30%;
+}
+
+
+/************************ABOUT US PAGE *******************/
+section.contact-us{
+  width:40%;
+  float:left;
+}
+
+.team-member-img{
+  float:left;
+}
+
+.team-member {
+  clear:both;
+  margin-top:10%;
+}
+
+iframe{
+  width:55%;
+  margin-right:5%;
+}
+
+
+
+}
+
+
+/*********************LAPTOP STYLES***************************/
+@media only screen and (min-width: 900px) {
+
+/******BASE STYLES**********/
+html{
+  font-size:1.2em;
+}
+
+h2{
+  font-size:1.17em;
+}
+
+h3{
+  font-size:1.1em;
+}
+
+h5{
+
+}
+
+p{
+  font-size:.889em;
+}
+
+/************HEADER AND NAV ****************/
+header{
+  background-color:#dddddd;
+  height:50px;
+  margin-top:3%;
+}
+
+.logo{
+  margin:1% 0 1% 3%;
+  width:36%;
+}
+
+.logo img{
+  margin-top:-8%;
+}
+
+nav{
+  width:61%;
+  margin:0;
+}
+
+nav li{
+  margin-left:5%;
+}
+
+nav ul{
+  width:100%;
+  text-align:right;
+}
+
+
+/*********MAIN ARTICLE AREA **************/
+main{
+  padding-top:5%;
+}
+
+
+figure.main-article-img{
+    float:none;
+    width:100%;
+  }
+
+.main-article{
+  float:left;
+  width:60%;
+}
+
+.top-content{
+  width:100%;
+  margin-left:3%;
+}
+
+
+/*********CALL TO ACTION SIDEBAR ****************/
+
+aside{
+  width:30%;
+  border-left:1px solid #cccccc;
+  padding:0 2%;
+  height:690px;
+}
+
+aside h2{
+  margin:0;
+}
+
+.newsletter-signup input{
+  height:45px;
+}
+
+.faq, .upcoming-concerts{
+  margin-top:20px;
+  border-top: 1px solid #dddddd;
+  padding: 7% 0 0 5%;
+  margin:20px 0 0 -20px;
+}
+
+.see-all-btn{
+  margin:0;
+}
+
+/**************NEWS AND REVIEWS ****************/
+.news-reviews{
+  clear:both;
+  width:95%;
+  margin:0 2.5%;
+  border-right:0;
+}
+
+.news-reviews article{
+  height:10%;
+  display:block;
+  clear:both;
+}
+
+.news-reviews p{
+  display:block;
+  padding-bottom:5%;
+}
+
+.news-reviews figure{
+  width:23%;
+  margin:1% 3% 3% 0;
+}
+
+.bottom-section{
+  border:0;
+}
+
+/*************REVIEWS LANDING PAGE*************/
+.main-review-article img{
+  margin:2.5% 2.5% 0 2.5%;
+}
+
+.main-review-article h1{
+  padding:0;
+}
+
+
+/************UPCOMING CONCERTS**************/
+
+.feed{
+  width:60%;
+  float:left;
+  margin-left:5%;
+}
+
+.feed-left{
+  width:45%;
+  float:left;
+}
+
+
+.feed-left, .feed-right{
+  width:50%;
+  float:left;
+}
+
+
+
+
+
+
+
+
+/***********FOOTER ***************/
+
+footer img{
+  width:50%;
+}
+
+}
+
+
+/*********************DESKTOP STYLES***************************/
+@media all and (min-width: 1250px) {
+
+html{
+  font-size:1.5em;
+}
+
+h2{
+  color:#000;
+}
+
+h5{
+  font-size:.8em;
+}
+
+
+/****NAVIGATION *****/
+
+nav ul{
+  padding:3%;
+}
+
+
+main{
+  border-bottom:0;
+}
+
+
+figure.main-article-img img {
+  width:85%;
+  margin:0 7.5%;
+}
+
+/* NEWS AND REVIEWS SECTION - LANDING PAGE ****/
+
+.news-reviews p{
+  font-size:1.2em;
+  padding-bottom:10%;
+}
+
+.news-reviews figure{
+  margin:1% 3% 15% 0;
+}
+
+/****FOOTER *****/
+
+.footer-img{
+  width:25%;
+}
+
+/*****************ABOUT US ********************/
+.mission{
+  margin:5% auto;
+}
+
+
+
+}
+
+
+@media all and (min-width: 1500px) {
+
+
+/****About us page *****/
+  .team-member{
+    max-width:1200px;
+    margin:0 auto;
+  }
+
+  .team h1{
+    text-align:center;
+  }
+
+
+}
+
+
+
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

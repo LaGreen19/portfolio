@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Photo Video Link Gallery
- * Version: 1.4.5
+ * Version: 1.4.6
  * Description: Design Photo, Video, Link, Image Gallery With CSS3 Hover Animation & Display With Lightbox
  * Author: Weblizar
  * Author URI: http://weblizar.com/plugins/photo-gallery-pluign/
@@ -28,7 +28,7 @@ function PGP_DefaultSettingsPro(){
 		'PGP_Show_Gallery_Title'	=> "yes",
 		'PGP_Show_Image_Label'     	=> "yes",
         'PGP_Gallery_Layout'      	=> "col-md-6",
-		'PGP_Open_Link'      		=> "_blank",
+		'PGP_Open_Link'      		=> "_self",
         'PGP_Color'         		=> "#31A3DD",
         'PGP_Font_Style'			=> "Arial",
         'PGP_Light_Box'          	=> "swipe_box",
@@ -302,7 +302,7 @@ class PGP {
 									<input type="text" id="PGP_image_label[]" name="PGP_image_label[]" value="<?php echo esc_attr ($name); ?>" placeholder="Enter Label Here" class="pgp_label_text">
 								</p>
 								<p>
-									<label><?php _e('Video URL','PGP_TEXT_DOMAIN')?> ( <a href="http://weblizar.com/get-youtube-vimeo-video-url/" target="_self"><strong><?php _e('Help','PGP_TEXT_DOMAIN')?></strong></a> )</label>
+									<label><?php _e('Video URL','PGP_TEXT_DOMAIN')?> ( <a href="http://weblizar.com/get-youtube-vimeo-video-url/" target="_blank"><strong><?php _e('Help','PGP_TEXT_DOMAIN')?></strong></a> )</label>
 									<input type="text" id="PGP_video_link[]" name="PGP_video_link[]" value="<?php echo esc_url($video); ?>" placeholder="Enter Youtube/Vimeo Video URL" class="pgp_label_text">
 								</p>
 								<label><?php _e('Link','PGP_TEXT_DOMAIN')?></label>
@@ -346,7 +346,7 @@ class PGP {
 		</style>
 		<div style="text-align:left;color:#F8504B !important;">
 			<p>Please Review & Rate Us On WordPress</p>
-			<a class="upgrade-to-pro-demo fag-rate-us" style=" text-decoration: none; height: 40px; width: 40px;" href="https://wordpress.org/plugins/photo-video-link-gallery/" target="_self">
+			<a class="upgrade-to-pro-demo fag-rate-us" style=" text-decoration: none; height: 40px; width: 40px;" href="https://wordpress.org/plugins/photo-video-link-gallery/" target="_blank">
 				<span class="dashicons dashicons-star-filled"></span>
 				<span class="dashicons dashicons-star-filled"></span>
 				<span class="dashicons dashicons-star-filled"></span>
@@ -355,7 +355,7 @@ class PGP {
 			</a>
 		</div>
 		<div class="upgrade-to-pro-demo" style="text-align:left;margin-bottom:10px;margin-top:10px;color:#F8504B !important;">
-			<a href="https://wordpress.org/plugins/photo-video-link-gallery/" target="_self" class="button button-primary button-hero">RATE US</a>
+			<a href="https://wordpress.org/plugins/photo-video-link-gallery/" target="_blank" class="button button-primary button-hero">RATE US</a>
 		</div>
         <?php
     }
@@ -388,7 +388,7 @@ class PGP {
 		</style>
 		<div align="center">
 			<p>Please Review & Rate Us On WordPress</p>
-			<a class="upgrade-to-pro-demo .fag-rate-us" style=" text-decoration: none; height: 40px; width: 40px;" href="https://wordpress.org/plugins/photo-video-link-gallery/" target="_self">
+			<a class="upgrade-to-pro-demo .fag-rate-us" style=" text-decoration: none; height: 40px; width: 40px;" href="https://wordpress.org/plugins/photo-video-link-gallery/" target="_blank">
 				<span class="dashicons dashicons-star-filled"></span>
 				<span class="dashicons dashicons-star-filled"></span>
 				<span class="dashicons dashicons-star-filled"></span>
@@ -397,7 +397,7 @@ class PGP {
 			</a>
 		</div>
 		<div class="upgrade-to-pro-demo" style="text-align:center;margin-bottom:10px;margin-top:10px;">
-			<a href="https://wordpress.org/plugins/photo-video-link-gallery/" target="_self" class="button button-primary button-hero">RATE US</a>
+			<a href="https://wordpress.org/plugins/photo-video-link-gallery/" target="_blank" class="button button-primary button-hero">RATE US</a>
 		</div>
 		<?php
 	}
@@ -472,7 +472,7 @@ class PGP {
 					<input type="text" id="PGP_image_label[]" name="PGP_image_label[]" placeholder="Enter Label Here" class="pgp_label_text">
 				</p>
 				<p>
-					<label><?php _e('Video URL','PGP_TEXT_DOMAIN')?> ( <a href="http://weblizar.com/get-youtube-vimeo-video-url/" target="_self"><strong><?php _e('Help','PGP_TEXT_DOMAIN')?></strong></a> )</label>
+					<label><?php _e('Video URL','PGP_TEXT_DOMAIN')?> ( <a href="http://weblizar.com/get-youtube-vimeo-video-url/" target="_blank"><strong><?php _e('Help','PGP_TEXT_DOMAIN')?></strong></a> )</label>
 					<input type="text" id="PGP_video_link[]" name="PGP_video_link[]" placeholder="Enter Youtube/Vimeo Video URL" class="pgp_label_text">
 				</p>
 					<label><?php _e('Link','PGP_TEXT_DOMAIN')?></label>

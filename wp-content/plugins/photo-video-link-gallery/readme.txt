@@ -4,7 +4,7 @@ Donate link: http://www.weblizar.com/
 Tags: gallery, photo, video, link, gallery shortcode, gallery widget, grid gallery, photo gallery, video gallery, link gallery, photo video link gallery
 Requires at least: 3.8
 Tested up to: 4.7
-Stable tag: 1.4.5
+Stable tag: 1.4.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -140,6 +140,7 @@ If you have any question contact us at here: [Plugin Support Forum ](http://word
 
 For more information, see Weblizar(http://wwww.weblizar.com/).
 
+= 1.4.6 version update only
 = 1.4.5 compatible upto WordPress 4.7
 = 1.4.4 - update
 = 1.4.3 =
