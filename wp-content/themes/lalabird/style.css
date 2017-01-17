@@ -1,0 +1,1681 @@
+/*
+Theme Name: LaLaBird
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: lalabird
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+LaLaBird is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body {
+	margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden],
+template {
+	display: none;
+}
+
+a {
+	background-color: transparent;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+img {
+	border: 0;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+pre {
+	overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input {
+	line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #b9bfc9;
+	font-family: "cabin condensed", sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+h1{
+	font-family:"cookie", cursive;
+	color:#b9bfc9;
+	font-size:1.75em;
+	font-weight:lighter;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+	clear: both;
+	font-weight:lighter;
+	font-family:"cabin condensed", sans serif;
+	color:#b9bfc9;
+}
+
+
+h2{
+	font-size:1.5em;
+}
+
+h3{
+	font-size:1.25em;
+}
+
+h5{
+	font-size:.85em;
+}
+
+p {
+	text-align:center;
+	font-size:.75em;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff; /* Fallback for when there is no custom background color defined. */
+	width:100%;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: #ccc #ccc #bbb;
+	border-radius: 3px;
+	background: #e6e6e6;
+	color: rgba(0, 0, 0, .8);
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	border-color: #ccc #bbb #aaa;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	border-color: #aaa #bbb #bbb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+select {
+	border: 1px solid #ccc;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+textarea {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	text-align: center;
+	float:right;
+}
+
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.main-navigation li {
+	position: relative;
+}
+
+.main-navigation a {
+	text-decoration:none;
+}
+
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 1.5em;
+	left: -999em;
+	z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+	display: block;
+	text-decoration: none;
+	margin-right:20%;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	left: 100%;
+}
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
+.main-navigation .current-menu-ancestor > a {
+	font-weight:bolder;
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+.menu-toggle{
+    background-color: transparent;
+		border:0;
+}
+
+.menu-toggle i {
+    background-color: #4c5663;
+		color:#b9bfc9;
+}
+
+/****PORTFOLIO PAGES NAVIGATION / BREADCRUMBS****/
+
+.page-name-title{
+	float:none!important;
+	width:100%;
+	padding-top:1%;
+}
+.page-name-title a{
+	text-decoration:none;
+}
+
+ol.breadcrumbs{
+	list-style:none;
+	padding:0;
+	display:flex;
+	align-items:center;
+	background-color:#383e5e;
+	height:40px;
+	width:100%;
+	margin:0;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+.breadcrumbs li {
+	float: left;
+	padding:0 2%;
+	width:auto!important;
+	white-space:nowrap;
+}
+
+.breadcrumbs li:before{
+font-family: 'FontAwesome';
+content: '\f18c';
+display: inline-block;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.breadcrumbs a{
+	text-decoration:none;
+	margin-left:4%;
+	font-size:1em;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+/*****HEADER *****/
+.site-header {
+    background-image: url(http://localhost:8080/portfolio/wp-content/uploads/2017/01/header-3-1024x386.jpg);
+    background-size:cover;
+		height:300px;
+}
+
+.entry-title{
+	display:none;
+}
+
+.name{
+	font-weight: lighter;
+	line-height: 1em;
+	margin:4% 0 0 4%;
+}
+
+.name-title{
+	float:left;
+	width:75%;
+}
+
+.header-job-title{
+	line-height: 1em;
+	margin: -2% 0 0 8%;
+	font-size: .85em;
+}
+
+.header-job-title span{
+	margin-left:10%;
+}
+
+.site-title a{
+  font-family:"Cookie", cursive;
+  font-weight:lighter;
+	text-decoration: none;
+	font-size: 2.5em;
+}
+
+.site-title{
+	line-height:0;
+	padding:20% 0 2% 0;
+}
+
+.site-description{
+	width: 90%;
+	margin: 0 auto;
+	font-size:1em;
+}
+
+/******INTRO AREA ******/
+.site-main{
+	background-color:#4e4c63;
+}
+
+.site-content{
+	margin-top:-10%;
+	background-color:#4e4c63;
+}
+
+.intro_heading{
+	text-align:right;
+	line-height:1em;
+	padding: 10% 6% 0 0;
+  margin: 0% 0 0 1%;
+}
+
+h3.intro_p{
+	font-size:.75em;
+	font-weight:lighter;
+	display:inline;
+}
+
+.image_wrapper img {
+    border-radius: 50%;
+    border: 5px solid #3a405e;
+		margin:0 0 -16% 25%;
+		width:100%;
+}
+
+.intro_content .image_wrapper {
+  height: auto;
+  float: left;
+	display:inline;
+  margin-right:10%;
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+
+.image_wrapper{
+	width:25%;
+}
+
+.intro_content{
+	width:95%;
+	margin:0 2% 0 3%;
+}
+/*******CALLL to ACTION BUTTON *********/
+.call-to-action-content{
+  padding:0;
+}
+
+/*********CONTACT BUTTON **********/
+.contact-button {
+    font-family: "Cookie", cursive;
+    border: #b9bfc9 1px solid;
+    color: #b9bfc9;
+    font-size: 2em;
+    line-height: 1em;
+    box-shadow:3px 3px 3px #b9bfc9;
+    border-radius:10%;
+		margin:10% auto 5% auto;
+    width: 65%;
+    text-align: center;
+}
+
+.contact-button a{
+font-family: "Cookie",sans-serif;
+text-decoration: none;
+	}
+
+.contact-button:hover {
+    border-color: #3a405e;
+    color:#383e5e;
+		content:"Contact Me";
+}
+
+/*****SERVICES******/
+.services-block{
+	clear:both;
+}
+
+figure.service_icon {
+		font-size:2.5em;
+		line-height: 1em;
+    margin: -3% 0 5% 0;
+	  color:#b9bfc9;
+}
+
+.services-block {
+    clear: both;
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h2.service_item-title{
+	font-size: 1.25em;
+  line-height: 1em;
+  margin: 20% 0 5% 0;
+}
+
+h5.service_excerpt{
+	margin-top:0;
+}
+
+
+/*****ABOUT *****/
+.entry-content{
+	width:90%;
+	margin:0 auto;
+	font-size:1.25em;
+	text-align:center;
+	margin-top:20%;
+}
+
+.entry-content h1{
+	line-height:1em;
+	margin:0;
+}
+
+/*******LANDING PAGE PORTFOLIO *******/
+ul.portfolio-list {
+    list-style: none;
+    margin: 0 auto;
+		display:inline;
+}
+
+.portfolio-home{
+	width:85%;
+	margin:0 auto;
+}
+
+.portfolio h1{
+	text-align:center;
+	font-size:3em;
+	line-height:1em;
+	margin:20% 0 0 0;
+}
+
+figure.portfolio-project,
+article.portfolio-project {
+    border: .25px solid #b9bfc9;
+    border-radius: 10%;
+    padding:2%;
+    box-shadow:3px 3px 3px #b9bfc9;
+    text-align:center;
+}
+
+/******PORTFOLIO PAGES ********/
+
+/***PORTFOLIO PAGES HEADER ***/
+body #content #primary {
+  width:100%;
+}
+
+.page-header{
+  background-image:url(http://localhost:8080/portfolio/wp-content/uploads/2017/01/cropped-header-2-1024x264.jpg);
+  background-size:cover;
+  height:175px;
+	position:relative;
+}
+
+h1.portfolio-name{
+  font-size:3.75em;
+  margin: 0 0 3% 3%;
+  line-height:0em;
+	padding-top:7%;
+}
+
+h2.portfolio-header-job-title{
+  line-height:1em;
+  font-size:1.65em;
+  margin:6% 0 0 15%;
+}
+
+h2.portfolio-header-job-title span{
+  margin-left:5%;
+}
+
+/***PROJECT INFO ***/
+.portfolio-gallery-title{
+  color:#b9bfc9;
+  font-size:3em!important;
+  line-height:1em;
+  font-weight:lighter!important;
+  font-family:"Cookie", cursive!important;
+  text-align:center;
+  border-bottom:none!important;
+	padding-top:20%;
+}
+
+h1.project-title{
+	padding-top:10%;
+	font-size:2em;
+	text-align:center;
+}
+
+figure.portfolio-project{
+	width:100%;
+	margin:0;
+}
+
+article.portfolio-project{
+	width:85%;
+	margin:7.5%;
+}
+
+.portfolio-project a{
+	text-decoration:none;
+}
+
+.portfolio-page-excerpt p{
+	font-size:1.5em;
+	margin-top:-10%;
+}
+
+.portfolio-project h2{
+  font-family:"Cookie", cursive;
+  text-align:center;
+}
+
+.main-image img{
+  width:90%;
+	margin:0 5%;
+}
+
+.main-image{
+  margin:0;
+}
+
+.top-img{
+  width:100%;
+}
+
+.post-362{
+	padding:0 0 10% 0;
+}
+
+/*****PROJECT INFO ********/
+
+.project-info{
+  text-align:center;
+  display:inline-block;
+  margin-top:5%;
+}
+
+
+.project-info ul{
+  list-style-type:none;
+  margin:2% 0;
+}
+
+.project-info h3{
+  font-size:1em;
+}
+
+i.fa.fa-github, i.fa.fa-pagelines{
+  color:#bfc8e0;
+}
+
+/*****FOOTER******/
+.post-edit-link{
+	display:none;
+}
+
+footer#colophon {
+    background-color: #383e5e;
+}
+
+#footerwidgets {
+	display: block;
+	width:100%;
+	margin: 0 auto;
+	text-align:center;
+}
+
+.textwidget p{
+	width:85%;
+	margin:0 auto;
+}
+#footer-left {
+	float: left;
+	width:100%;
+}
+
+#footer-middle{
+	margin:-10% 0;
+	width:100%;
+	font-size:1.15em;
+}
+
+#social-media{
+	padding-bottom:10%;
+}
+
+#social-media a{
+	text-decoration:none;
+	margin: 0 2%;
+	font-size:2.5em;
+}
+
+div#footerwidgets ul{
+	list-style:none;
+	display:inline;
+}
+
+h2.widgettitle{
+	font-size:1.5em;
+}
+
+.footer-pagelines{
+  font-size:1em;
+}
+
+.social-intro h2{
+  font-family: "cabin condensed",sans-serif;
+  color:#b9bfc9;
+  font-size:1em;
+}
+
+
+/**********************************************MEDIA QUERIES - *************************************/
+
+/***************************PHONE LANDSCAPE SYLES ****************************/
+@media only screen and (min-width: 475px){
+
+html{
+  font-size:18px;
+}
+
+/*****HEADER *******/
+.site-header{
+  height:400px;
+}
+
+.name{
+  margin-top:3%;
+  font-size:2.75em;
+}
+
+.header-job-title{
+	margin-left: 8%;
+  font-size: 1.2em;
+}
+
+.header-job-title span{
+  margin-left:5%;
+}
+
+.name-title{
+  text-align:left;
+}
+
+h2.portfolio-header-job-title{
+  line-height:1em;
+  font-size:1.75em;
+  margin:-5% 0 0 5%;
+}
+
+.site-title{
+	padding: 8% 0 0% 0;
+	font-size: 1.25em;
+}
+
+.site-description {
+  font-size:1.25em;
+}
+
+
+/****INTRO AREA *************/
+
+.intro_heading{
+	font-size:2.75em;
+}
+
+h3.intro_p{
+	font-size:1.25em;
+}
+
+p.intro{
+  margin-top:-34%;
+  margin-bottom:8%;
+  padding-top:3%;
+  font-size:1.25em;
+  text-align:left;
+}
+
+p.intro span{
+  margin:5% 0;
+}
+
+/********SERVICES******/
+
+.service {
+    width: 45%;
+    float: left;
+    margin: 0 2.5%;
+}
+
+h5.service_excerpt{
+	font-size:1em;
+}
+
+h2.service_item-title{
+	font-size:1.5em;
+}
+
+/*****ABOUT *********/
+.entry-content h1{
+	padding-top:10%;
+	clear:both;
+}
+
+
+/********SERVICES PAGE************/
+
+.services h1{
+  font-size:3em;
+  color:#b9bfc9;
+}
+
+/*********PORTFOLIO**********************/
+
+.portfolio{
+	clear:both;
+}
+
+.portfolio h1{
+	font-size:3em;
+	text-align:center;
+}
+
+.portfolio-home{
+	width:100%;
+	margin:0;
+}
+
+figure.portfolio-project{
+	width:45%;
+	margin: 2.5% 7% 2.5% -2%;
+	float:left;
+}
+
+ul.portfolio-list{
+	display:block;
+}
+
+.portfolio-project h2{
+  font-size:2em;
+}
+
+p.portfolio-page-excerpt{
+	text-align:center;
+	font-size:1.25em;
+}
+
+.portfolio-projects{
+	display:inline;
+	width:50%;
+}
+
+.portfolio-projects p,
+article.portfolio-project{
+	font-size:1.5em;
+}
+
+article.portfolio-project{
+  padding:2%;
+  width:90%;
+  margin:5%;
+}
+
+/*****INDIVIDUAL PORTFOLIO PAGES ******/
+
+.project-title {
+    font-size: 5em!important;
+		text-decoration:none;
+}
+
+
+/*******FOOTER*******/
+#footer-widgets .widget-title,
+#footer-widgets a{
+  font-size:1.75em;
+  margin:5% 0 0 0;
+}
+
+#footer-left{
+	width:50%;
+}
+
+#footer-middle{
+	margin:0% 5% 0 0;
+	width:45%;
+	float:left;
+}
+
+#social-media a{
+	font-size:2em;
+}
+
+
+}
+
+
+/*****TABLET STYLES********/
+
+@media only screen and (min-width: 623px){
+
+html{
+	font-size:16px;
+}
+
+p{
+	font-size:1em;
+}
+
+.header-job-title{
+	margin:-1% 0 0 8%;
+}
+
+.page-header{
+	height:300px;
+}
+
+.site-title{
+	padding:13% 0 0% 0;
+}
+
+.site-description{
+	font-size:1.35em;
+}
+
+
+.intro_heading {
+  font-size: 3em;
+  margin-left: 12%;
+}
+
+.intro_content .image_wrapper{
+	margin:-5% 25% 0 0;
+}
+
+.image_wrapper{
+	width:20%;
+}
+
+.contact-button{
+	width: 30%;
+  padding: 3%;
+}
+
+/****SERVICES *****/
+h5.service_excerpt{
+	font-size:1.35em;
+}
+.service{
+	width:45%;
+}
+
+/****PORTFOLIO ****/
+.portfolio h1{
+	padding-top:6%;
+}
+
+article.portfolio-project{
+padding: 2%;
+width: 45%;
+margin: 2%;
+float: left;
+}
+
+figure.portfolio-project{
+	width:45%;
+	margin: 2.5% 3% 2.5% 1%;
+}
+
+/****PORTFOLIO PAGES BREADCRUMBS NAVIGATION ***/
+ol.breadcrumbs{
+	height:60px;
+}
+
+.breadcrumbs a{
+	font-size:1.25em;
+}
+
+.breadcrumbs li{
+	padding:1%;
+}
+
+.portfolio-gallery-title{
+  font-size:4em!important;
+	line-height:0;
+}
+
+article.portfolio-project.single-project{
+	  display:inline-block;
+	  width:80%;
+	  text-align:center;
+	  margin:0 10% 10% 10%;
+	}
+
+
+	.project-title{
+	  font-size:4em!important;
+	}
+
+/****FOOTER *****/
+#footer-left,
+#footer-middle{
+	font-size:1.5em;
+}
+
+h2.widgettitle{
+	line-height:0em;
+}
+
+}
+/******LAPTOP STYLES********/
+
+@media only screen and (min-width: 900px){
+
+.name{
+  margin:2% 0% 0 2%;
+}
+
+.header-job-title span{
+  margin-left:2%;
+}
+
+.header-job-title{
+  margin:-1% 0 0 6%;
+}
+
+.site-header{
+  height:425px;
+}
+
+.site-title{
+  margin:5% 0 2% 0;
+	padding:10% 0 0 0;
+}
+
+.site-description{
+	width:65%;
+}
+
+.main-navigation ul{
+  margin-top:20%;
+}
+
+.main-navigation ul li a{
+  color:#b9bfc9;
+}
+
+/*****INTRO AREA *****/
+
+.intro_heading{
+	margin:0 0 0 15%;
+	padding:5% 5% 0 5%;
+}
+
+h3.intro_p{
+	font-size:1.35em;
+	padding-left:5%;
+}
+
+.image_wrapper img{
+	width:50%;
+	margin-top:-1%;
+}
+/******SERVICES******/
+
+h3.service-item-title{
+  font-size:1.5em;
+  margin-top:10%;
+}
+
+.service-item-excerpt{
+  font-size:.75em;
+}
+
+
+
+/********LANDING PAGE PORTFLIO ***********/
+
+/*****INDIVIDUAL PORTFOLIO PAGES ******/
+
+h1.portfolio-name{
+  padding-top:5%;
+  line-height:0em;
+}
+
+.project-info{
+  padding:3%;
+}
+
+/*******PORTFOLIO ARCHIVE PAGE*********/
+article.portfolio-project{
+  width:46%;
+  margin:2%;
+  float:left;
+}
+
+h2.portfolio-page-title{
+  font-size:1.5em!important;
+}
+
+/*****FOOTER*******/
+#footer-widgets .widget-title, #footer-widgets a{
+  font-size:1.5em;
+}
+
+#footer-widgets ul{
+  font-size:1.25em;
+}
+}
+
+
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
