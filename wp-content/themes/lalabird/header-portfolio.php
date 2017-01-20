@@ -20,6 +20,7 @@
 <?php wp_head(); ?>
 </head>
 
+
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'lalabird' ); ?></a>
@@ -30,7 +31,7 @@
 		<div class="name-title page-name-title">
 			<a href="http://laura-greenberg.com">
 				<h1 class="name">Laura Greenberg</h1>
-				<h2 class="header-job-title">Freelance Wordpresser &amp; <br> <span>Front-End Developer </span></h2>
+				<h2 class="header-job-title">Freelance WordPresser &amp; <br> <span>Front-End Developer </span></h2>
 			</a>
 		</div>
 

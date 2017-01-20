@@ -262,15 +262,15 @@ select,
 textarea {
 	color: #b9bfc9;
 	font-family: "cabin condensed", sans-serif;
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 1.5;
 }
 
 h1{
 	font-family:"cookie", cursive;
 	color:#b9bfc9;
-	font-size:1.75em;
-	font-weight:lighter;
+	font-size:2em;
+	font-weight:lighter!important;
 }
 
 h2,
@@ -288,20 +288,20 @@ a {
 
 
 h2{
-	font-size:1.5em;
+	font-size:1.75em;
 }
 
 h3{
-	font-size:1.25em;
+	font-size:1.5em;
 }
 
 h5{
-	font-size:.85em;
+	font-size:1.5em;
 }
 
 p {
 	text-align:center;
-	font-size:.75em;
+	font-size:1em;
 }
 
 dfn,
@@ -628,6 +628,7 @@ a:active {
 .menu-toggle{
     background-color: transparent;
 		border:0;
+		margin-right:5%;
 }
 
 .menu-toggle i {
@@ -652,7 +653,7 @@ ol.breadcrumbs{
 	display:flex;
 	align-items:center;
 	background-color:#383e5e;
-	height:40px;
+	height:50px;
 	width:100%;
 	margin:0;
 	position:absolute;
@@ -664,25 +665,30 @@ ol.breadcrumbs{
 	float: left;
 	padding:0 2%;
 	width:auto!important;
+	text-align:center;
 	white-space:nowrap;
+
 }
 
 .breadcrumbs li:before{
 font-family: 'FontAwesome';
 content: '\f18c';
 display: inline-block;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+-ms-transform: rotate(90deg); /* IE 9 */
+	 -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+	 transform: rotate(90deg);
+margin-right:5%;
 }
 
 .breadcrumbs a{
 	text-decoration:none;
-	margin-left:4%;
 	font-size:1em;
 }
+
+li.current_item {
+	display:none;
+}
+
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -792,11 +798,11 @@ display: inline-block;
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-/*****HEADER *****/
+/********** HEADER **********/
 .site-header {
-    background-image: url(http://localhost:8080/portfolio/wp-content/uploads/2017/01/header-3-1024x386.jpg);
+    background-image: url("http://laura-greenberg.com/wp-content/uploads/2017/01/header-3-1024x386.jpg");
     background-size:cover;
-		height:300px;
+		height:325px;
 }
 
 .entry-title{
@@ -816,8 +822,8 @@ display: inline-block;
 
 .header-job-title{
 	line-height: 1em;
-	margin: -2% 0 0 8%;
-	font-size: .85em;
+	margin: -2% 0 0 6%;
+	font-size: 1em;
 }
 
 .header-job-title span{
@@ -833,16 +839,17 @@ display: inline-block;
 
 .site-title{
 	line-height:0;
-	padding:20% 0 2% 0;
+	padding:17% 0 2% 0;
 }
 
 .site-description{
-	width: 90%;
+	width: 75%;
 	margin: 0 auto;
-	font-size:1em;
+	line-height: 1.2em;
 }
 
-/******INTRO AREA ******/
+
+/********** INTRO AREA **********/
 .site-main{
 	background-color:#4e4c63;
 }
@@ -853,59 +860,55 @@ display: inline-block;
 }
 
 .intro_heading{
-	text-align:right;
+	text-align:center;
 	line-height:1em;
-	padding: 10% 6% 0 0;
-  margin: 0% 0 0 1%;
 }
 
 h3.intro_p{
-	font-size:.75em;
+	font-size:1.1em;
 	font-weight:lighter;
-	display:inline;
+	text-align:center;
+}
+
+.image_wrapper{
+	width:40%;
+	margin:10% auto 0 auto;
 }
 
 .image_wrapper img {
     border-radius: 50%;
     border: 5px solid #3a405e;
-		margin:0 0 -16% 25%;
-		width:100%;
-}
-
-.intro_content .image_wrapper {
-  height: auto;
-  float: left;
-	display:inline;
-  margin-right:10%;
-  border-radius: 50%;
-  -webkit-shape-outside:circle();
-  shape-outside:circle();
-}
-
-.image_wrapper{
-	width:25%;
+		margin:0 .5% .5% 1%;
+		width:98%;
+		max-width:200px;
 }
 
 .intro_content{
 	width:95%;
 	margin:0 2% 0 3%;
 }
-/*******CALLL to ACTION BUTTON *********/
+
+
+/********** CALL to ACTION BUTTON *********/
 .call-to-action-content{
   padding:0;
 }
 
-/*********CONTACT BUTTON **********/
+#post-324 .entry-content {
+	margin-top:8%;
+}
+
+/********** CONTACT BUTTON **********/
 .contact-button {
     font-family: "Cookie", cursive;
     border: #b9bfc9 1px solid;
     color: #b9bfc9;
-    font-size: 2em;
+    font-size: 2.5em;
     line-height: 1em;
     box-shadow:3px 3px 3px #b9bfc9;
     border-radius:10%;
-		margin:10% auto 5% auto;
-    width: 65%;
+		margin:10% auto 0 auto;
+    width: 85%;
     text-align: center;
 }
 
@@ -920,10 +923,12 @@ text-decoration: none;
 		content:"Contact Me";
 }
 
-/*****SERVICES******/
-.services-block{
-	clear:both;
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required,
+.wpcf7-form-control.wpcf7-text{
+	width:100%;
 }
+
+/********** SERVICES **********/
 
 figure.service_icon {
 		font-size:2.5em;
@@ -936,35 +941,44 @@ figure.service_icon {
     clear: both;
     text-align: center;
     width: 95%;
-    margin: 0 auto;
+    margin: 10% auto 0 auto;
 }
 
+.services-block h1 {
+    font-size: 3em;
+    line-height: 1em;
+		margin:0;
+}
+
+
 h2.service_item-title{
-	font-size: 1.25em;
   line-height: 1em;
-  margin: 20% 0 5% 0;
+  margin: 10% 0 5% 0;
 }
 
 h5.service_excerpt{
-	margin-top:0;
+	margin:0 0 20% 0;
+	font-size:1.15em;
 }
 
 
-/*****ABOUT *****/
+/********** ABOUT **********/
 .entry-content{
 	width:90%;
-	margin:0 auto;
-	font-size:1.25em;
+	margin:20% auto 0 auto;
+	font-size:1.15em;
 	text-align:center;
-	margin-top:20%;
 }
 
 .entry-content h1{
 	line-height:1em;
 	margin:0;
+	font-size:2.5em;
 }
 
-/*******LANDING PAGE PORTFOLIO *******/
+
+
+/********** LANDING PAGE PORTFOLIO **********/
 ul.portfolio-list {
     list-style: none;
     margin: 0 auto;
@@ -976,11 +990,15 @@ ul.portfolio-list {
 	margin:0 auto;
 }
 
-.portfolio h1{
+#portfolio h1{
 	text-align:center;
 	font-size:3em;
 	line-height:1em;
-	margin:20% 0 0 0;
+	margin:0;
+}
+
+#portfolio{
+	margin:0 auto;
 }
 
 figure.portfolio-project,
@@ -992,15 +1010,15 @@ article.portfolio-project {
     text-align:center;
 }
 
-/******PORTFOLIO PAGES ********/
+/********** PORTFOLIO PAGES **********/
 
-/***PORTFOLIO PAGES HEADER ***/
+/********** HEADER **********/
 body #content #primary {
   width:100%;
 }
 
 .page-header{
-  background-image:url(http://localhost:8080/portfolio/wp-content/uploads/2017/01/cropped-header-2-1024x264.jpg);
+  background-image:url(http://laura-greenberg.com/wp-content/uploads/2017/01/cropped-header-2-1024x264.jpg);
   background-size:cover;
   height:175px;
 	position:relative;
@@ -1023,7 +1041,8 @@ h2.portfolio-header-job-title span{
   margin-left:5%;
 }
 
-/***PROJECT INFO ***/
+
+/********** PROJECT INFO **********/
 .portfolio-gallery-title{
   color:#b9bfc9;
   font-size:3em!important;
@@ -1082,7 +1101,7 @@ article.portfolio-project{
 	padding:0 0 10% 0;
 }
 
-/*****PROJECT INFO ********/
+/********** PROJECT INFO **********/
 
 .project-info{
   text-align:center;
@@ -1100,11 +1119,16 @@ article.portfolio-project{
   font-size:1em;
 }
 
+.project-info ul li:before{
+	font-family: 'FontAwesome';
+	content: '\f18c';
+}
+
 i.fa.fa-github, i.fa.fa-pagelines{
   color:#bfc8e0;
 }
 
-/*****FOOTER******/
+/********** FOOTER **********/
 .post-edit-link{
 	display:none;
 }
@@ -1164,17 +1188,26 @@ h2.widgettitle{
   font-size:1em;
 }
 
+.site-info a{
+	text-decoration:none;
+}
+
+.site-info{
+	width:100%;
+	text-align:center;
+}
+
 
 /**********************************************MEDIA QUERIES - *************************************/
 
-/***************************PHONE LANDSCAPE SYLES ****************************/
+/******************** PHONE LANDSCAPE SYLES ****************************/
 @media only screen and (min-width: 475px){
 
 html{
   font-size:18px;
 }
 
-/*****HEADER *******/
+/********** HEADER **********/
 .site-header{
   height:400px;
 }
@@ -1204,16 +1237,27 @@ h2.portfolio-header-job-title{
 }
 
 .site-title{
-	padding: 8% 0 0% 0;
-	font-size: 1.25em;
+	padding: 15% 0 0% 0;
 }
 
 .site-description {
   font-size:1.25em;
+	width:90%;
 }
 
+.main-navigation{
+	margin-right:5%;
+}
 
-/****INTRO AREA *************/
+/********** INTRO AREA **********/
+
+.intro_content .image_wrapper {
+  height: auto;
+  float: left;
+	display:inline;
+  margin: 4% 0 0 4%;
+  border-radius: 50%;
+}
 
 .intro_heading{
 	font-size:2.75em;
@@ -1223,55 +1267,52 @@ h3.intro_p{
 	font-size:1.25em;
 }
 
-p.intro{
-  margin-top:-34%;
-  margin-bottom:8%;
-  padding-top:3%;
-  font-size:1.25em;
-  text-align:left;
+.contact-button{
+	padding:3% 0;
 }
 
-p.intro span{
-  margin:5% 0;
-}
+/********** SERVICES **********/
 
-/********SERVICES******/
+#portfolio h1{
+	padding-top:5%;
+}
 
 .service {
-    width: 45%;
-    float: left;
+    display:inline-block;
     margin: 0 2.5%;
 }
 
 h5.service_excerpt{
-	font-size:1em;
+	font-size:1.25em;
+	margin:0;
 }
 
 h2.service_item-title{
-	font-size:1.5em;
+	font-size:1.75em;
 }
 
-/*****ABOUT *********/
-.entry-content h1{
-	padding-top:10%;
-	clear:both;
+/********** ABOUT **********/
+.entry-content{
+	clear: both;
+	padding-top: 3%;
+	margin-top: 0;
 }
 
-
-/********SERVICES PAGE************/
+/********** SERVICES PAGE **********/
 
 .services h1{
   font-size:3em;
   color:#b9bfc9;
 }
 
-/*********PORTFOLIO**********************/
+/********** PORTFOLIO **********/
 
-.portfolio{
+#portfolio{
 	clear:both;
+	margin:0;
 }
 
-.portfolio h1{
+#portfolio h1{
 	font-size:3em;
 	text-align:center;
 }
@@ -1282,9 +1323,9 @@ h2.service_item-title{
 }
 
 figure.portfolio-project{
-	width:45%;
-	margin: 2.5% 7% 2.5% -2%;
-	float:left;
+	width:85%;
+	margin:5% auto;
+
 }
 
 ul.portfolio-list{
@@ -1316,15 +1357,15 @@ article.portfolio-project{
   margin:5%;
 }
 
-/*****INDIVIDUAL PORTFOLIO PAGES ******/
+/********** INDIVIDUAL PORTFOLIO PAGES **********/
 
 .project-title {
-    font-size: 5em!important;
+    font-size: 3em!important;
 		text-decoration:none;
 }
 
 
-/*******FOOTER*******/
+/********** FOOTER **********/
 #footer-widgets .widget-title,
 #footer-widgets a{
   font-size:1.75em;
@@ -1349,7 +1390,7 @@ article.portfolio-project{
 }
 
 
-/*****TABLET STYLES********/
+/******************** TABLET STYLES *******************/
 
 @media only screen and (min-width: 623px){
 
@@ -1366,11 +1407,23 @@ p{
 }
 
 .page-header{
-	height:300px;
+	height:315px;
+}
+
+.site-header{
+  height:475px;
+}
+
+.fa.fa-bars.fa-2x {
+    font-size: 4em;
 }
 
 .site-title{
 	padding:13% 0 0% 0;
+}
+
+.site-header{
+	  height:475px;
 }
 
 .site-description{
@@ -1380,11 +1433,12 @@ p{
 
 .intro_heading {
   font-size: 3em;
-  margin-left: 12%;
+  margin-left: 10%;
+	padding-top:5%;
 }
 
-.intro_content .image_wrapper{
-	margin:-5% 25% 0 0;
+h3.intro_p {
+    font-size: 1.15em;
 }
 
 .image_wrapper{
@@ -1392,21 +1446,24 @@ p{
 }
 
 .contact-button{
-	width: 30%;
-  padding: 3%;
+	width: 53%;
+  padding: 2%;
+	margin:5% auto 0 auto;
 }
 
-/****SERVICES *****/
+
+/********** SERVICES **********/
 h5.service_excerpt{
 	font-size:1.35em;
 }
 .service{
-	width:45%;
+	width:44%;
 }
 
-/****PORTFOLIO ****/
-.portfolio h1{
-	padding-top:6%;
+/********** PORTFOLIO **********/
+
+.portfolio-page-title{
+	font-size:1.25em;
 }
 
 article.portfolio-project{
@@ -1419,19 +1476,19 @@ float: left;
 figure.portfolio-project{
 	width:45%;
 	margin: 2.5% 3% 2.5% 1%;
+	float:left;
 }
 
-/****PORTFOLIO PAGES BREADCRUMBS NAVIGATION ***/
+
+
+/********** PORTFOLIO PAGES BREADCRUMBS NAVIGATION **********/
 ol.breadcrumbs{
 	height:60px;
 }
 
-.breadcrumbs a{
-	font-size:1.25em;
-}
-
 .breadcrumbs li{
 	padding:1%;
+	font-size:1.25em;
 }
 
 .portfolio-gallery-title{
@@ -1446,15 +1503,18 @@ article.portfolio-project.single-project{
 	  margin:0 10% 10% 10%;
 	}
 
+.project-title{
+	font-size:4em!important;
+	}
 
-	.project-title{
-	  font-size:4em!important;
+li.current_item {
+	display:inline;
 	}
 
 /****FOOTER *****/
 #footer-left,
 #footer-middle{
-	font-size:1.5em;
+	font-size:1.25em;
 }
 
 h2.widgettitle{
@@ -1462,10 +1522,16 @@ h2.widgettitle{
 }
 
 }
-/******LAPTOP STYLES********/
+
+
+/******************** LAPTOP STYLES ********************/
 
 @media only screen and (min-width: 900px){
 
+body{
+	font-size:1.25em;
+}
+/********** HEADER **********/
 .name{
   margin:2% 0% 0 2%;
 }
@@ -1479,16 +1545,12 @@ h2.widgettitle{
 }
 
 .site-header{
-  height:425px;
+  height:475px;
 }
 
 .site-title{
   margin:5% 0 2% 0;
-	padding:10% 0 0 0;
-}
-
-.site-description{
-	width:65%;
+	padding:8% 0 0 0;
 }
 
 .main-navigation ul{
@@ -1499,38 +1561,60 @@ h2.widgettitle{
   color:#b9bfc9;
 }
 
-/*****INTRO AREA *****/
-
-.intro_heading{
-	margin:0 0 0 15%;
-	padding:5% 5% 0 5%;
-}
+/********** INTRO AREA **********/
 
 h3.intro_p{
-	font-size:1.35em;
-	padding-left:5%;
+	font-size:1.15em;
 }
 
-.image_wrapper img{
-	width:50%;
-	margin-top:-1%;
+.intro_content .image_wrapper{
+	margin:0;
 }
-/******SERVICES******/
+
+.intro_heading{
+	padding-top:5%;
+}
+
+
+/********** SERVICES **********/
 
 h3.service-item-title{
-  font-size:1.5em;
   margin-top:10%;
 }
 
-.service-item-excerpt{
-  font-size:.75em;
+.service{
+	width:42%;
+	margin:0 2%;
+}
+
+.services-block{
+	margin: 5% auto 0 auto;
 }
 
 
+/********** PORTFOLIO **********/
+.portfolio h1 {
+    font-size: 3.5em;
+}
 
-/********LANDING PAGE PORTFLIO ***********/
+figure.portfolio-project{
+	height:auto;
+}
 
-/*****INDIVIDUAL PORTFOLIO PAGES ******/
+/********** ABOUT **********/
+.entry-content h1{
+	font-size:2.75em;
+}
+
+/********** FOOTER **********/
+#footer-left,
+#footer-middle{
+	font-size:1.25em;
+}
+
+
+/********** INDIVIDUAL PORTFOLIO PAGES **********/
+
 
 h1.portfolio-name{
   padding-top:5%;
@@ -1541,18 +1625,19 @@ h1.portfolio-name{
   padding:3%;
 }
 
-/*******PORTFOLIO ARCHIVE PAGE*********/
+/********** PORTFOLIO ARCHIVE PAGE **********/
 article.portfolio-project{
-  width:46%;
-  margin:2%;
+  width:42%;
+  margin:4% auto;
   float:left;
+	padding:0;
 }
 
 h2.portfolio-page-title{
   font-size:1.5em!important;
 }
 
-/*****FOOTER*******/
+/********** FOOTER*******/
 #footer-widgets .widget-title, #footer-widgets a{
   font-size:1.5em;
 }
@@ -1560,8 +1645,131 @@ h2.portfolio-page-title{
 #footer-widgets ul{
   font-size:1.25em;
 }
+
 }
 
+/******************** DESKTOP STYLES ********************/
+
+@media only screen and (min-width: 1115px){
+
+.site-header{
+	height:500px;
+}
+
+.site-title{
+	padding:8% 0 0 0;
+}
+
+.contact-button{
+	width:40%;
+}
+
+.intro_heading{
+	margin:0 5% 0 15%;
+	padding-top:10%;
+}
+
+.intro_content .image_wrapper {
+  margin: 8% 0 0 11%;
+	width: 15%;
+	}
+
+h5.service_excerpt {
+  font-size: 1.15em;
+	padding-bottom:15%;
+}
+
+.entry-content {
+  padding-top: 5%;
+}
+
+.service {
+    width: 21%;
+    float: left;
+}
+
+.main-image{
+	width:75%;
+	margin:0 auto;
+}
+
+
+}
+
+
+/**************WIDESCREEN STYLES ********************/
+
+@media only screen and (min-width: 1448px){
+
+.site-header{
+	height:700px;
+}
+
+.page-header{
+	height:450px;
+}
+
+.header-job-title {
+    margin: 0 0 0 4%;
+}
+
+.site-title {
+    padding: 8% 0 0 0;
+}
+
+.intro_content .image_wrapper{
+	width:15%;
+	margin:4% 0 0 12%;
+}
+
+.intro_heading span{
+	display:block;
+}
+
+.intro_heading {
+    margin: 0 14% 0 7%;
+    padding-top: 6%;
+}
+
+h3.intro_p {
+    font-size: 1.35em;
+    margin: 0 19%;
+}
+
+.contact-button {
+    width: 30%;
+    margin: 5% auto 0 auto;
+    padding: 1%;
+}
+
+.services-block{
+	margin-top:5%;
+}
+
+#portfolio {
+    margin: 0 5%;
+    width: 90%;
+}
+
+#portfolio h1 {
+    padding-top: 3%;
+}
+
+figure.portfolio-project {
+    width: 24%;
+    margin: 2.5% .5% 0 .5%;
+    float: left;
+}
+
+.entry-content {
+    padding-top: 5%;
+}
+
+#footer-left, #footer-middle {
+    font-size: 1.25em;
+}
+
+}
 
 
 /*--------------------------------------------------------------

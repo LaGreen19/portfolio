@@ -41,19 +41,21 @@ get_header(); ?>
         $service_excerpt4 = get_field('service_excerpt4');
     ?>
 
-      <h1 class="intro_heading"><?php echo $intro_heading; ?></h1>
-
-      <div class="intro_content">
+    <div class="intro_content">
         <div class="image_wrapper">
           <?php echo wp_get_attachment_image( $profile_image, $size ); ?>
         </div>
 
+        <h1 class="intro_heading"><?php echo $intro_heading; ?></h1>
         <h3 class="intro_p"><?php echo $intro_content; ?></h3>
+
       </div>
 
       <div class="contact-button"><?php echo $contact_button; ?></div>
 
     <div class="services-block">
+
+        <h1>Services</h1>
         <div class="service">
           <h2 class="service_item-title"><?php echo $service1; ?></h2>
           <figure class="service_icon"><?php echo $service_icon1; ?></figure>
@@ -79,12 +81,12 @@ get_header(); ?>
         </div>
     </div>
 
-    <div class="portfolio">
+    <div id="portfolio">
     <h1>Portfolio</h1>
 
        <?php query_posts('posts_per_page=4&post_type=portfolio_projects'); ?>
        			<?php while ( have_posts() ) : the_post();
-       			$main_image = get_field("main_image");
+       			$front_page_image = get_field("front_page_image");
        					$size = "full";
                   $project_type = get_field('project_type');
        				?>
@@ -94,7 +96,7 @@ get_header(); ?>
 
 
                   <figure class="image-hover portfolio-project">
-       								<a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image($main_image, $size); ?></a>
+       								<a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image($front_page_image, $size); ?></a>
                       <a href="<?php the_permalink(); ?>"><div class="image-hover-text"><?php echo $project_type; ?></div></a>
                   </figure>
 
@@ -105,9 +107,11 @@ get_header(); ?>
        		<?php wp_reset_query(); ?>
         </div>
 
+    <div id="about">
         <?php get_template_part( 'template-parts/content', 'page' ); ?>
 		    <?php endwhile; ?>
 		<?php wp_reset_query(); ?>
+  </div>
 	</div>
 
 

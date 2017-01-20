@@ -35,7 +35,7 @@
 		<a href="http://laura-greenberg.com">
 			<div class="name-title">
 				<h1 class="name">Laura Greenberg</h1>
-				<h2 class="header-job-title">Freelance Wordpresser &amp; <br> <span>Front-End Developer </span></h2>
+				<h2 class="header-job-title">Freelance WordPresser &amp; <br> <span>Front-End Developer </span></h2>
 			</div>
 		</a>
 

@@ -46,9 +46,7 @@
 
 
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'lalabird' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'lalabird' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'lalabird' ), 'lalabird', '<a href="https://automattic.com/" rel="designer">Underscores.me</a>' ); ?>
+<a href="laura-greenberg.com" rel="designer">Proudly coded in Asheville, NC by Laura Greenberg, Freelance Wordpresser and Front-End Developer</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
