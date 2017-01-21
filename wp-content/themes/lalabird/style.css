@@ -442,15 +442,15 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
+	border-color: #b9bfc9;
 	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, .8);
-	font-size: 12px;
-	font-size: 0.75rem;
-	line-height: 1;
+	background: #383e5e;
+	color: #b9bfc9;
+	font-size: 1em;
+	line-height: 1em;
 	padding: .6em 1em .4em;
 }
+
 
 button:hover,
 input[type="button"]:hover,
@@ -800,7 +800,7 @@ li.current_item {
 --------------------------------------------------------------*/
 /********** HEADER **********/
 .site-header {
-    background-image: url("http://laura-greenberg.com/wp-content/uploads/2017/01/header-3-1024x386.jpg");
+    background-image: url(http://laura-greenberg.com/wp-content/uploads/2017/01/header_2000x800.jpg);
     background-size:cover;
 		height:325px;
 }
@@ -1082,6 +1082,7 @@ article.portfolio-project{
 .portfolio-project h2{
   font-family:"Cookie", cursive;
   text-align:center;
+	line-height:1em;
 }
 
 .main-image img{
@@ -1332,10 +1333,6 @@ ul.portfolio-list{
 	display:block;
 }
 
-.portfolio-project h2{
-  font-size:2em;
-}
-
 p.portfolio-page-excerpt{
 	text-align:center;
 	font-size:1.25em;
@@ -1467,7 +1464,6 @@ h5.service_excerpt{
 }
 
 article.portfolio-project{
-padding: 2%;
 width: 45%;
 margin: 2%;
 float: left;
@@ -1626,15 +1622,10 @@ h1.portfolio-name{
 }
 
 /********** PORTFOLIO ARCHIVE PAGE **********/
-article.portfolio-project{
-  width:42%;
-  margin:4% auto;
-  float:left;
-	padding:0;
-}
 
 h2.portfolio-page-title{
   font-size:1.5em!important;
+	line-height:1em;
 }
 
 /********** FOOTER*******/
@@ -1771,6 +1762,23 @@ figure.portfolio-project {
 
 }
 
+
+
+/**************SUPER WIDESCREEN STYLES ********************/
+
+@media only screen and (min-width: 1448px){
+	.site-header{
+		height:850px;
+	}
+
+	.intro_content .image_wrapper {
+    width: 15%;
+    margin: 5% 0 0 25%;
+}
+.intro_heading {
+    margin: 0 25% 0 7%;;]
+
+}
 
 /*--------------------------------------------------------------
 ## Comments
