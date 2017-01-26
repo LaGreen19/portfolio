@@ -53,7 +53,7 @@ get_header(); ?>
 
       <div class="contact-button"><?php echo $contact_button; ?></div>
 
-    <div class="services-block">
+      <div class="services-block">
 
         <h1>Services</h1>
         <div class="service">
@@ -70,7 +70,9 @@ get_header(); ?>
 
         <div class="service">
           <h2 class="service_item-title"><?php echo $service3; ?></h2>
+          <div class="service_icon_wrapper">
           <figure class="service_icon"><?php echo $service_icon3; ?></figure>
+          </div>
           <h5 class="service_excerpt"><?php echo $service_excerpt3; ?></h5>
         </div>
 

@@ -53,7 +53,7 @@ add_shortcode( 'hover-effect', 'image_hover_shortcode' );
  * @return void
  */
 function image_hover_css() {
-	wp_enqueue_style( 'image-hover', plugins_url( 'image-hover.css', __FILE__ ), array(), '1.0.0' );
+	wp_enqueue_style( 'image-hover', plugins_url( '', __FILE__ ), array(), '1.0.0' );
 }
 
 add_action( 'wp_enqueue_scripts', 'image_hover_css' );

@@ -46,7 +46,7 @@
 
 
 		<div class="site-info">
-<a href="laura-greenberg.com" rel="designer">Proudly coded in Asheville, NC by Laura Greenberg, Freelance Wordpresser and Front-End Developer</a>
+<a href="laura-greenberg.com" rel="designer">Proudly coded in Asheville, NC by Laura Greenberg, Freelance WordPresser and Front-End Developer</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

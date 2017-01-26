@@ -30,7 +30,7 @@
 
 		<div class="name-title page-name-title">
 			<a href="http://laura-greenberg.com">
-				<h1 class="name">Laura Greenberg</h1>
+				<h1 class="name page-name">Laura Greenberg</h1>
 				<h2 class="header-job-title">Freelance WordPresser &amp; <br> <span>Front-End Developer </span></h2>
 			</a>
 		</div>

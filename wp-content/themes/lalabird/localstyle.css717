@@ -550,12 +550,10 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
-  display: inline;
-  float: left;
-  position: absolute;
-  right: 1%;
-  top: 1%;
+	text-align: center;
+	float:right;
+	margin: 4% 0 0 0;
+	width:10%;
 }
 
 .main-navigation ul {
@@ -565,10 +563,14 @@ a:active {
 	padding-left: 0;
 }
 
+.main-navigation li {
+	position: relative;
+	display: inline;
+  margin-left: 2%;
+}
 
 .main-navigation a {
-	display: block;
-	text-decoration: none;
+	text-decoration:none;
 }
 
 .main-navigation ul ul {
@@ -587,23 +589,9 @@ a:active {
 
 .main-navigation ul ul a {
 	width: 200px;
-	text-decoration:none;
-}
-
-.main-navigation ul ul li {
-
-}
-
-.main-navigation li:hover > a,
-.main-navigation li.focus > a {
-}
-
-.main-navigation ul ul :hover > a,
-.main-navigation ul ul .focus > a {
-}
-
-.main-navigation ul ul a:hover,
-.main-navigation ul ul a.focus {
+	display: block;
+	text-decoration: none;
+	margin-right:20%;
 }
 
 .main-navigation ul li:hover > ul,
@@ -616,47 +604,20 @@ a:active {
 	left: 100%;
 }
 
-.main-navigation .current_page_item > a,
-.main-navigation .current-menu-item > a,
-.main-navigation .current_page_ancestor > a,
-.main-navigation .current-menu-ancestor > a {
-}
-
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
 
-.menu-toggle{
-    background-color: transparent;
-		border:0;
+@media screen and (min-width: 623px) {
+	.menu-toggle {
+		display: none;
 	}
-
-@media screen and (min-width: 53em) {
-.menu-toggle {
-	display: none;
+	.main-navigation ul {
+		display: block;
+	}
 }
-
-.main-navigation ul {
-	display: flex;
-	justify-content:flex-end;
-	width:100%;
-}
-
-.menu-main-menu-container{
-	width:100%;
-}
-
-.main-navigation li {
-	float: left;
-	position: relative;
-	margin:0 10%;
-}
-
-
-}
-
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
@@ -680,16 +641,38 @@ a:active {
 	width: 50%;
 }
 
+/* Small menu. */
+
+
+.main-navigation ul li a{
+  color:#ced2d9;
+}
+
+.menu-toggle{
+    background-color: transparent;
+		border:0;
+		margin: 5% 5% 0 0;
+    padding: 0 5% 0 0;
+}
+
+.menu-toggle i {
+    background-color: #4c5663;
+		color:#ced2d9;
+		font-size:2em;
+}
 
 /****PORTFOLIO PAGES NAVIGATION / BREADCRUMBS****/
+
 .page-name-title{
 	float:none!important;
 	width:100%;
 	padding-top:1%;
 }
+
 .page-name-title a{
 	text-decoration:none;
 }
+
 ol.breadcrumbs{
 	list-style:none;
 	padding:0;
@@ -703,13 +686,16 @@ ol.breadcrumbs{
 	bottom:0;
 	left:0;
 }
+
 .breadcrumbs li {
 	float: left;
 	padding:0 2%;
 	width:auto!important;
 	text-align:center;
 	white-space:nowrap;
+
 }
+
 .breadcrumbs li:before{
 font-family: 'FontAwesome';
 content: '\f18c';
@@ -719,17 +705,15 @@ display: inline-block;
 	 transform: rotate(90deg);
 margin-right:5%;
 }
+
 .breadcrumbs a{
 	text-decoration:none;
 	font-size:1em;
 }
+
 li.current_item {
 	display:none;
 }
-
-
-
-
 
 
 /*--------------------------------------------------------------
@@ -849,7 +833,6 @@ body{
     background-image: url(http://laura-greenberg.com/wp-content/uploads/2017/01/header_2000x800.jpg);
     background-size:cover;
 		height:300px;
-		position:relative;
 }
 
 .entry-title{
@@ -859,16 +842,12 @@ body{
 .name{
 	font-weight: lighter;
 	line-height: 1em;
-	margin:0 0 0 3%;
+	margin:3% 0 0 3%;
 }
 
 .name-title{
 	float:left;
-	width:70%;
-	position: absolute;
-  top: 1%;
-  left: 0;
-	min-width:200px;
+	width:75%;
 }
 
 .header-job-title{
@@ -882,9 +861,9 @@ body{
 }
 
 .site-branding{
+	position: absolute;
+	top:10%;
 	min-width:250px;
-	position:absolute;
-	top:35%;
 }
 
 .site-title a{
@@ -1068,7 +1047,7 @@ ul.portfolio-list {
 figure.portfolio-project,
 article.portfolio-project {
     border: .25px solid #ced2d9;
-    border-radius: 4%;
+    border-radius: 10%;
     padding:2%;
     box-shadow:3px 3px 3px #ced2d9;
     text-align:center;
@@ -1099,7 +1078,7 @@ article.portfolio-project {
     top: -4%;
     left: 0;
     border: 3px solid #4e4c63;
-    border-radius: 15%;
+    border-radius: 28%;
     padding:6% 10%;
     text-align:center;
 }
@@ -1114,7 +1093,7 @@ body #content #primary {
 .page-header{
   background-image:url(http://laura-greenberg.com/wp-content/uploads/2017/01/header-2000X800.jpg);
   background-size:cover;
-  height:200px;
+  height:175px;
 	position:relative;
 }
 
@@ -1293,13 +1272,6 @@ h2.widgettitle{
 }
 
 
-#wpfront-scroll-top-container{
-	display:none;
-	position:fixed;
-	cursor:pointer;
-	z-index:9999;
-}
-
 /**********************************************MEDIA QUERIES - *************************************/
 
 /******************** PHONE LANDSCAPE SYLES ****************************/
@@ -1315,17 +1287,11 @@ html{
 	margin-top:-10%;
 }
 
-.main-navigation,
-.name-title{
-	top:15%;
-}
-
-.page-name-title{
-	top:0;
-}
 .name{
+  margin-top:15%;
   font-size:2.75em;
 }
+
 
 .header-job-title{
 	margin-left: 8%;
@@ -1336,6 +1302,10 @@ html{
   margin-left:5%;
 }
 
+.name-title{
+  text-align:left;
+}
+
 h2.portfolio-header-job-title{
   line-height:1em;
   font-size:1.75em;
@@ -1343,9 +1313,9 @@ h2.portfolio-header-job-title{
 }
 
 .site-branding{
-	top:45%;
-
+	top:15%;
 }
+
 
 .site-title a{
 	font-size:2.5em;
@@ -1354,6 +1324,10 @@ h2.portfolio-header-job-title{
 .site-description {
   font-size:1.25em;
 	width:90%;
+}
+
+.main-navigation{
+  margin: 11% 0 0 0;
 }
 
 /********** INTRO AREA **********/
@@ -1413,10 +1387,13 @@ h2.service_item-title{
 }
 
 /********** PORTFOLIO **********/
+.page-name{
+	margin-top:0;
+}
 
 #portfolio{
 	clear:both;
-	margin:5% 0;
+	margin:0;
 	padding:0 0 5% 0;
 }
 
@@ -1507,15 +1484,6 @@ p{
 	font-size:1em;
 }
 
-.name-title,
-.main-navigation{
-	top:21%;
-}
-
-.page-name-title{
-	top:0;
-}
-
 .header-job-title{
 	margin:-1% 0 0 8%;
 }
@@ -1524,11 +1492,9 @@ p{
 	height:315px;
 }
 
-
-.site-branding{
-	top:55%;
+.main-navigation {
+	width:20%;
 }
-
 
 .intro_heading {
   font-size: 3em;
@@ -1625,22 +1591,25 @@ h2.widgettitle{
 
 /******************** LAPTOP STYLES ********************/
 
-@media only screen and (min-width: 850px){
+@media only screen and (min-width: 900px){
 
 body{
 	font-size:1.25em;
 }
 /********** HEADER **********/
-
-.name-title,
 .main-navigation{
-	top:5%;
-	width:50%;
+	margin:2%;
 }
 
-.main-navigation li{
-	margin:0 3%;
+
+.name{
+  margin:2% 0% 0 2%;
 }
+
+.page-name{
+	margin-top:0;
+}
+
 .header-job-title span{
   margin-left:2%;
 }
@@ -1652,12 +1621,6 @@ body{
 .site-header{
   height:450px;
 	margin-top:0;
-}
-
-.site-branding{
-	top:45%;
-	text-align: center;
-	width: 100%;
 }
 
 .site-description{
@@ -1763,6 +1726,8 @@ h2.portfolio-page-title{
 	width:40%;
 }
 
+
+
 .intro_heading{
 	margin:0 5% 0 15%;
 	padding-top:10%;
@@ -1801,6 +1766,11 @@ h5.service_excerpt {
 .header-job-title {
     margin:-0.5% 0 0 3%
 }
+
+.site-branding {
+    position: relative;
+    top: 35%;
+	}
 
 .intro_content .image_wrapper{
 	width:15%;
@@ -1866,14 +1836,6 @@ figure.portfolio-project {
 	height:700px;
 }
 
-.header-job-title{
-	margin:-1% 0 0 6%;
-}
-
-.main-navigation li{
-	margin:0 1%;
-}
-
 .intro_content .image_wrapper {
   width: 15%;
   margin: 5% 0 0 25%;
@@ -1883,7 +1845,6 @@ figure.portfolio-project {
     margin: 0 20% 0 7%;;]
 }
 
-}
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/

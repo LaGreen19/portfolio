@@ -16,7 +16,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed|Cookie" rel="stylesheet">
-	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 <?php wp_head(); ?>
 </head>
 
@@ -28,7 +27,7 @@
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-<?php esc_html_e('', 'lalabird' ); ?></button>
+			<?php esc_html_e('', 'lalabird' ); ?></button>
 		<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 
